@@ -1,0 +1,112 @@
+/* Contenedor general */
+.release-proposals-wrapper {
+  width: 100%;
+}
+
+/* Tabla de asociaciones */
+.associations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.associations-table th, .associations-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.associations-table th {
+  background-color: #ffffff;
+}
+
+.associations-table td {
+  background-color: #02000000;
+}
+
+/* Estilo para filas intercaladas */
+.associations-table tbody tr:nth-child(odd) {
+  background-color: #e3f2fd; /* Filas impares (blancas) */
+}
+
+.associations-table tbody tr:nth-child(even) {
+  background-color: #ffff; /* Filas pares (azules suaves) */
+}
+
+/* Estilo para los iconos de acciones */
+.icon-action {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-action.clickable:hover {
+  color: #007bff; /* Cambia el color cuando se pasa el mouse */
+}
+
+.icon-action.disabled {
+  color: #ccc; /* Color gris cuando está deshabilitado */
+  cursor: not-allowed;
+}
+
+/* Estilo para el mensaje de no asociaciones */
+.no-associations-message {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-top: 30px;
+}
+
+/* Estilo para el mensaje de carga */
+.loading-message {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.loading-gif {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+
+/* Estilo para las casillas destacadas */
+.highlighted {
+  background-color: #007bff !important; /* Color verde para destacar la casilla */
+  color: rgb(255, 255, 255); /* Texto en rojo para contraste */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos generales para los botones */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button,
+.confirmation-buttons button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 45%;
+  border: none;
+  background-color: #405F90; /* Color verde para todos los botones */
+  color: white;
+}
+
+.button-group button:hover,
+.confirmation-buttons button:hover {
+  background-color: #2e4972; /* Hover azul oscuro */
+  opacity: 0.9;
+}
+
+.confirm-no {
+  background-color: #EF3340; /* Color rojo para el botón "No" */
+}
+
+.confirm-no:hover {
+  background-color: #c02935; /* Hover rojo oscuro */
+}

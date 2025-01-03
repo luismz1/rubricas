@@ -1,0 +1,94 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: transparent; /* Caja del navbar transparente */
+  color: white;
+}
+
+.navbar-left {
+  font-size: 24px;
+  font-weight: bold;
+  color: #405F90; /* Texto 'Rubrics App' en azul */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right a {
+  color: #000; /* Color negro para el texto de los enlaces */
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-bottom: 2px solid transparent; /* Línea inferior inicial transparente */
+  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-right a.active {
+  border-bottom: 2px solid #405F90; /* Línea morada debajo de la opción activa */
+  font-weight: bold;
+  color: #405F90; /* Letra en morado cuando está activa */
+}
+
+.navbar-right a:not(.active) {
+  border-bottom: 2px solid gray; /* Línea gris debajo de la opción no activa */
+}
+
+
+.navbar-right a:hover {
+  color: #405F90; /* Cambia el color del texto a morado cuando se hace hover */
+  background-color: rgba(0, 123, 255, 0.1); /* Cambia el fondo a morado claro en hover */
+  border-bottom: 2px solid #405F90; /* Línea morada durante el hover */
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px; /* Espacio entre otros elementos del navbar */
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background-color: transparent; /* Fondo transparente */
+  color: #000; /* Texto negro */
+  border: none;
+}
+
+.dropdown-menu {
+  display: none; /* Por defecto oculto */
+  position: absolute;
+  background-color: #ffffff; /* Fondo blanco */
+  color: black;
+  min-width: 150px; /* Ajustar el tamaño mínimo */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; /* Borde redondeado */
+}
+
+.dropdown-menu a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Mostrar cuando pasas el cursor por el dropdown */
+}
+
+.dropdown-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo claro al pasar el cursor */
+  border-radius: 5px;
+}

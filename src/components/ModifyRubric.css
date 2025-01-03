@@ -1,0 +1,135 @@
+.modify-rubric-wrapper {
+    width: 100%;
+  }
+  
+  .modify-rubric-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+    
+.mini-navbar-horizontal {
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  margin-bottom: 20px; /* Espacio entre el navbar y el contenido */
+  padding: 10px;
+  background-color: transparent; /* Caja del navbar transparente */
+  border-bottom: none; /* Sin borde inferior para hacer la caja completamente invisible */
+}
+
+.mini-navbar-item-horizontal {
+  padding: 8px 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 14px; /* Letra más pequeña */
+  color: #000; /* Color de texto inicial */
+  border-bottom: 2px solid transparent; /* Línea inferior inicial transparente */
+  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.mini-navbar-item-horizontal.active {
+  border-bottom: 2px solid #405F90 ; /* Línea morada debajo de la opción activa */
+  font-weight: bold;
+  color: #405F90 ; /* Letra en morado cuando está activa */
+}
+
+.mini-navbar-item-horizontal:not(.active) {
+  border-bottom: 2px solid gray; /* Línea gris debajo de la opción no activa */
+}
+
+.mini-navbar-item-horizontal:hover {
+  color: #405F90 ; /* Cambia el color del texto a morado cuando se hace hover */
+  background-color: rgba(0, 123, 255, 0.1); /* Cambia el fondo a morado claro en hover */
+  border-bottom: 2px solid #405F90; /* Línea morada durante el hover */
+}
+
+.criterio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinea verticalmente los íconos con el título */
+}
+
+.criterio-icons {
+  display: flex;
+  gap: 10px; /* Espacio entre los íconos */
+}
+
+.edit-icon, .delete-icon {
+  cursor: pointer;
+}
+
+/* Agregar estilos de modal en CreateRubric.css */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo gris */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que se muestre sobre todo */
+}
+
+.delete-modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.confirm-yes {
+  background-color: #405F90 !important;
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 45%;
+}
+
+.confirm-no {
+  background-color: #EF3340 !important;
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 45%;
+}
+
+.modify-button {
+  background-color: #405F90; /* Azul */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+.modify-button:hover {
+  background-color: #2e4972; /* Azul más oscuro al pasar el ratón */
+}
+
+.modify-buttons {
+  display: flex;
+  justify-content: flex-end; /* Alinea los botones a la derecha */
+  gap: 10px; /* Añade espacio entre los botones */
+  margin-top: 20px;
+}
+

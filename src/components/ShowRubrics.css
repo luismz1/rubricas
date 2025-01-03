@@ -1,0 +1,193 @@
+  /* Contenedor general */
+  .show-rubrics-wrapper {
+      width: 100%;
+    }
+  
+  /* Contenedor de las rúbricas */
+  .rubrics-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fila de rúbrica */
+  .rubric-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  /* Fondo al pasar el ratón */
+  .rubric-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  .loading-gif {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para el mensaje de carga global */
+  .loading-message {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 18px;
+    color: #666;
+  }
+
+
+  /* Información de la rúbrica */
+  .rubric-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo del título de la rúbrica */
+  .rubric-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Estilo del autor de la rúbrica */
+  .rubric-author {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Estilo del ícono de la lupa */
+  .rubric-icon {
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .rubric-icon:hover {
+    color: #405F90;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+  
+  .rubric-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .rubric-table th, .rubric-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .rubric-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+
+  .modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .modal-content h3 {
+    text-align: left;
+    margin: 0 0 10px 0; /* Puedes ajustar los márgenes si es necesario */
+  }
+  
+  
+  .modal-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content th,
+  .modal-content td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .modal-content th {
+    background-color: #f1f1f1;
+  }
+  
+  .modal-content td {
+    background-color: #fafafa;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    background-color: #405F90;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .modal-content button:hover {
+    background-color: #2e4972 ;
+  }
+  
+  .success-message-home {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+    background-color: #e0ffe0;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 1200px; /* Ancho máximo para igualar al cuadro gris */
+    margin: 0 auto; /* Centra el mensaje */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1; /* Inicia visible */
+  }
+  
+  /* Aseguramos que el contenedor de rúbricas ocupe todo el ancho */
+  @media (min-width: 768px) {
+    .rubrics-container {
+      max-width: 1200px;
+    }
+  }
+  

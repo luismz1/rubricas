@@ -1,0 +1,52 @@
+  /* Contenedor del contenido del modal */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Título del modal */
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Lista de estadísticas */
+  .modal-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Estilos para la lista del Top 5 */
+  .modal-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .modal-content ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Botón para cerrar el modal */
+  .modal-content button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #405F90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-content button:hover {
+    background-color: #2e4972;
+  }
+  

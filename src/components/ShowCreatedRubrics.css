@@ -1,0 +1,93 @@
+/* Contenedor general */
+.show-rubrics-wrapper {
+  width: 100%;
+}
+
+/* Estilos para la ventana de confirmación */
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estilo para el botón de Sí */
+.confirm-yes {
+  background-color: #405F90 !important; /* Color azul oscuro */
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 45%;
+}
+
+/* Hover para el botón de Sí */
+.confirm-yes:hover {
+  background-color: #2e4972 !important;
+}
+
+/* Estilo para el botón de No */
+.confirm-no {
+  background-color: #EF3340 !important; /* Color rojo */
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 45%;
+}
+
+/* Hover para el botón de No */
+.confirm-no:hover {
+  background-color: #c02935 !important;
+}
+
+/* Estilo para el mensaje de carga */
+.loading-message {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.loading-gif {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.rubric-icons {
+  display: flex;
+  gap: 10px; /* Añade espacio entre los íconos */
+}
+
+.icon {
+  font-size: 1.2em; /* Ajusta el tamaño de los íconos */
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Añade una transición suave para el color */
+}
+
+.icon:hover {
+  color: #007bff; /* Cambia el color cuando pasas el ratón por encima */
+}
+
+.icon:active {
+  color: #0056b3; /* Cambia el color cuando se hace clic */
+}
+
+.success-message-home {
+  color: green;
+  font-weight: bold;
+  margin: 10px 0;
+  background-color: #e0ffe0;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%; /* Ocupa todo el ancho */
+  max-width: 1200px; /* Ancho máximo para igualar al cuadro gris */
+  margin: 0 auto; /* Centra el mensaje */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; /* Inicia visible */
+}

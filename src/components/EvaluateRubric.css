@@ -1,0 +1,127 @@
+.evaluate-rubric-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.criterion-container {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: transparent; /* Fondo transparente */
+  border-radius: 8px;
+}
+
+.rubric-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.rubric-table th,
+.rubric-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.rubric-table td {
+  background-color: transparent; /* Aseguramos que no tenga fondo blanco */
+}
+
+.selectable-cell {
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.selectable-cell:hover {
+  background-color: #e0e0e0; /* Cambia a gris claro al pasar el ratón */
+}
+
+.selectable-cell.selected {
+  background-color: #007bff; /* Cambia a azul cuando está seleccionada */
+  color: white;
+}
+.submit-button {
+  padding: 10px 20px;
+  background-color: #405F90;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #2e4972;
+}
+
+/* Estilos para la ventana de confirmación */
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.confirm-yes {
+  background-color: #405F90;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 45%;
+}
+
+/* Hover para el botón de Sí */
+.confirm-yes:hover {
+  background-color: #2e4972;
+}
+
+.confirm-no {
+  background-color: #EF3340; /* Color rojo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 45%;
+}
+
+/* Hover para el botón de No */
+.confirm-no:hover {
+  background-color: #c02935;
+}
+
+/* Estilos para el modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo gris semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}

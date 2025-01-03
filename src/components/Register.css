@@ -1,0 +1,76 @@
+/* src/components/Register.css */
+
+/* Contenedor principal */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+/* Mensaje de error en amarillo, fuera de la caja de registro */
+.error-message {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  width: 400px; /* Ajustar el ancho para que coincida con el cuadro de registro */
+}
+
+/* Caja de registro, aumentada en tamaño */
+.register-box {
+  background-color: white;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Encabezado azul para registro */
+.register-header {
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Cuerpo del formulario */
+.register-body {
+  padding: 20px;
+}
+
+.register-body form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-body label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.register-body input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-body button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-body button:hover {
+  background-color: #0056b3;
+}

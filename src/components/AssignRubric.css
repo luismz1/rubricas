@@ -1,0 +1,69 @@
+.assign-rubric-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Estilo para el mensaje de carga */
+.loading-message {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.loading-gif {
+  width: 50px; /* Ajusta el tamaño según lo que necesites */
+  height: 50px;
+  margin-top: 10px; /* Ajuste para un pequeño margen superior */
+}
+
+
+.selection-container {
+  margin-bottom: 20px;
+}
+
+.scrollable-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+}
+
+.radio-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.save-button {
+  padding: 10px 20px;
+  background-color: #405F90;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-button:hover {
+  background-color: #2e4972;
+}
+
+.success-message, .error-message {
+  margin-top: 20px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.warning-message {
+  background-color: #fff3cd; /* Fondo amarillo claro */
+  color: #856404; /* Texto marrón oscuro */
+}
